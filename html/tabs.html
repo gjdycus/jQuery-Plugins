@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/tabs.js"></script>
+    <link href="../css/tabs.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <ul class="tabs">
+      <li><a href="#corgi" class="active" data-content-tabs=".content-tabs">Corgi</a></li>
+      <li><a href="#chihuahua">Chihuahua</a></li>
+      <li><a href="#dachshund">Dachshund</a></li>
+    </ul>
+
+    <section class="content-tabs">
+      <article id="corgi" class="active">
+        <p>
+          Information about Corgis
+        </p>
+      </article>
+
+      <article id="chihuahua">
+        <p>
+          Information about Chihuahuas
+        </p>
+      </article>
+
+      <article id="dachshund">
+        <p>
+          Information about Dachshunds
+        </p>
+      </article>
+
+    </section>
+  </body>
+  <script>
+    $(function() {
+      $('.tabs').tabs();
+    })
+
+    // $('.tabs').data('content-tabs', '.content-tabs');
+    // for (i = 0; i < 3; i++) {
+    //   $('section.content-tabs').append('<article></article>');
+    // }
+  </script>
+</html>

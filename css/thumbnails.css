@@ -1,0 +1,54 @@
+html, body, section, article,
+h1, h2, p, strong, em, a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+.thumbnails {
+  width: 400px;
+}
+
+.gutter-images img {
+  width: 20%;
+  display: block;
+  float: left;
+}
+
+.active img {
+  width: 100%;
+}
+
+a.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+}
+
+.gutter-images {
+  width: 90%;
+  position: relative;
+  left: 3.5%;
+}
+
+.gutter {
+  position: relative;
+}
+
+a.nav:last-child {
+  left: 95%
+}
+
+.gutter-images:after {
+  content: "";
+  display: block;
+  clear: both;
+}

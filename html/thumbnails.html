@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thumbnails!</title>
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/thumbnails.js"></script>
+    <link href="../css/thumbnails.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="thumbnails">
+      <div class="active"></div>
+
+      <div class="gutter">
+        <a class="nav">&lt;</a>
+        <div class="gutter-images">
+        </div>
+        <a class="nav">&gt;</a>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    for (i = 1; i <= 15; i++) {
+      $('.gutter-images').append("<img src='http://placecorgi.com/260/180?no_track=" + i + "'/>");
+    }
+
+    (function () {
+      $('.thumbnails').thumbnails();
+    })();
+  </script>
+</html>
